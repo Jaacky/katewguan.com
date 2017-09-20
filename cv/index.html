@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+<div class="main">
+    <div class="header">
+        <h1>Kate Guan</h1>
+        <h2>MA Student | University of British Columbia</h2>
+    </div>
+    <div class="container cv">
+        <div class="cv-section">
+            <h4>Education</h4>
+            <div class="cv-row">
+                <div class="cv-date">
+                    <p>2012 - 2017</p>
+                </div>
+                <div class="cv-dated-content">
+                    <p>B.Sc. Psychology. Univeristy of Toronto. 2017.</p>
+                    <p>Graduated Honors with High Distinction</p>
+                    <p>Undergraduate Supervisor: Jason Plaks</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cv-section">
+            <h4>Honors, Awards, and Scholarships</h4>
+            {% for award in site.data.awards %}
+                <div class="cv-row">
+                    <div class="cv-date">
+                        <p>{{ award.date }}</p>
+                    </div>
+                    <div class="cv-dated-content">
+                        <p>{{ award.name }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="cv-section">
+            <h4>Conference Presentations</h4>
+            {% for conference in site.data.conferences %}
+                <div class="cv-row">
+                    <p class="conference">
+                    {% for name in conference.names %}
+                        {{ name }}{% unless forloop.last %},{% endunless %} {% if forloop.rindex0 == 1%}& {% endif %}
+                    {% endfor %}
+                    ({{ conference.date }}). {{ conference.title }} {{ conference.location }}
+                    </p>
+                </div>
+            {% endfor %}
+        </div>
+
+    </div>
+</div>
