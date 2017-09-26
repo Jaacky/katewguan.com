@@ -28,6 +28,21 @@ p {
     font-size: 12px;
 }
 
+a {
+    font-size: 16px;
+    text-decoration: none;
+}
+
+button {
+    background-color: white;
+    border: 1px solid black;
+}
+
+button a {
+    display: inline-block;
+    padding: 10px 25px;
+}
+
 nav {
     text-align: center;
     padding: 15px;
@@ -70,7 +85,7 @@ nav a.active, nav a:hover {
 }
 
 .header h1 {
-    /* letter-spacing: 0.45em; */
+     letter-spacing: 0.45em; 
     text-transform: uppercase;
     font-size: 37px;
     margin-bottom: 25px;
@@ -94,11 +109,12 @@ nav a.active, nav a:hover {
 
 .container {
     padding: 30px;
-     display: inline-block; 
+    display: inline-block;
+    width: 100%;
     max-width: 1000px;
 }
 
-.container.cv, .container.about {
+.container.cv, .container.about, .container.blog, .container.post {
     text-align: left;
 }
 
@@ -152,4 +168,34 @@ nav a.active, nav a:hover {
 
 .about p {
     margin-bottom: 20px;
+}
+
+.blog li {
+    margin-top: 30px;
+}
+
+.blog p {
+    margin-bottom: 5px;
+}
+
+.blog button {
+    margin-top: 10px;
+}
+
+.blog .title {
+    font-family: Futura Std Book;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.blog .category {
+    border: 2px solid black;
+    padding: 5px 10px;
+    text-transform: capitalize;
+    margin-left: 20px;
+}
+
+.blog .date {
+    font-size: 14px;
 }

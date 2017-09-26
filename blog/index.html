@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<div class="main">
+    <div class="header">
+        <h1>Blog</h1>
+    </div>
+    <div class="container blog">
+        <ul>
+            {% for post in site.posts %}
+                <li>
+                    <div>
+                        <a class="title" href="{{ post.url }}">{{ post.title }}</a>
+                        {% if post.category.size %}
+                            <a class="category" href="">{{ post.category }}</a>
+                        {% endif %}
+                    </div>
+                    <p class="date">{{ post.date  | date: "%B %-d, %Y" }} | {{ post.author }}</p>
+                    <p>{{ post.snippet }}</p>
+                    <button>
+                        <a href="{{ post.url }}">Read More</a>
+                    </button>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
