@@ -6,22 +6,9 @@
         <title>Kate W. Guan</title>
     </head>
 
-    <nav>
-        <a href="/">Home</a>
-        <a href="/new-projects/">New Projects</a>
-        <a href="/cv/">CV</a>
-        <a href="/about/">About</a>
-        <a href="">Blog</a>
-    </nav>
+    {% include nav.html %}
 
     {{ content }}
 
-    <div class="footer">
-        <h2>Psychologist in progress</h2>
-        <div class="container">
-            <div class="social-media"></div>
-            <div class="mailing-list"></div>
-            <div class="copyright"></div>
-        </div>
-    </div>
+    {% include footer.html %}
 </html>
