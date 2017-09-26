@@ -7,22 +7,45 @@ layout: default
         <h1>Blog</h1>
     </div>
     <div class="container blog">
-        <ul>
-            {% for post in site.posts %}
-                <li>
-                    <div>
-                        <a class="title" href="{{ post.url }}">{{ post.title }}</a>
-                        {% if post.category.size %}
-                            <a class="category" href="">{{ post.category }}</a>
-                        {% endif %}
-                    </div>
-                    <p class="date">{{ post.date  | date: "%B %-d, %Y" }} | {{ post.author }}</p>
-                    <p>{{ post.snippet }}</p>
-                    <button>
-                        <a href="{{ post.url }}">Read More</a>
-                    </button>
-                </li>
-            {% endfor %}
-        </ul>
+        <div class="blog-column blog-posts">
+            <ul>
+                {% for post in site.posts %}
+                    <li>
+                        <div>
+                            <a class="title" href="{{ post.url }}">{{ post.title }}</a>
+                            {% if post.category.size %}
+                                <a class="category" href="">{{ post.category }}</a>
+                            {% endif %}
+                        </div>
+                        <p class="date">{{ post.date  | date: "%B %-d, %Y" }} | {{ post.author }}</p>
+                        <p>{{ post.snippet }}</p>
+                        <button>
+                            <a href="{{ post.url }}">Read More</a>
+                        </button>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="blog-column blog-side-bar">
+            <div class="blog-side-bar-item">
+                <p>Follow me</p>
+            </div>
+            <div class="blog-side-bar-item">
+                <p>Search by tags</p>
+                <ul class="blog-tags-list">
+                    {% assign sorted_tags = site.tags | sort %}
+                    {% for tag in sorted_tags %}
+                        {% assign t = tag | first %}
+                        {% assign posts = tag | last %}
+                        <li class="blog-tags">
+                            <a href="">{{ t }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="blog-side-bar-item">
+                <p>Featured posts</p>
+            </div>
+        </div>
     </div>
 </div>

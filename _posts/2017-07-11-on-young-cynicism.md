@@ -4,7 +4,7 @@ title: "On Young Cynicism"
 date: 2017-07-11
 snippet: "The problem with young cynics, having faith, and the decision to invest yourself in life."
 category: personal
-tags: education psychology advice opinion cynicism idealism activism meaning high school
+tags: [education, psychology, advice, opinion, cynicism, idealism, activism, meaning, high school]
 ---
 There is nothing so pitiful as a young cynic because he has gone from knowing nothing to believing nothing. - Maya Angelou
 

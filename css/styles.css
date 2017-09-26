@@ -31,6 +31,7 @@ p {
 a {
     font-size: 16px;
     text-decoration: none;
+    color: black;
 }
 
 button {
@@ -170,8 +171,34 @@ nav a.active, nav a:hover {
     margin-bottom: 20px;
 }
 
+.blog .blog-column {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.blog .blog-posts {
+    width: 70%;
+}
+
+.blog .blog-side-bar {
+    width: 30%;
+}
+
+.blog-side-bar-item {
+    margin-bottom: 15px;
+}
+
+.blog-side-bar p {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
 .blog li {
     margin-top: 30px;
+}
+
+.blog li:first-of-type {
+    margin-top: 0;
 }
 
 .blog p {
@@ -198,4 +225,10 @@ nav a.active, nav a:hover {
 
 .blog .date {
     font-size: 14px;
+}
+
+.blog .blog-tags {
+    display: inline-block;
+    margin-top: 0;
+    margin-right: 5px;
 }
