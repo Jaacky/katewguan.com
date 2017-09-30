@@ -11,13 +11,15 @@ layout: default
             <ul>
                 {% for post in site.posts %}
                     <li>
-                        <div>
+                        <div class="title-category">
                             <a class="title" href="{{ post.url }}">{{ post.title }}</a>
                             {% if post.category.size %}
                                 <a class="category" href="">{{ post.category }}</a>
                             {% endif %}
                         </div>
-                        <p class="date">{{ post.date  | date: "%B %-d, %Y" }} | {{ post.author }}</p>
+                        <h5 class="date-author">
+                            {{ post.date  | date: "%B %-d, %Y" }} | {{ post.author }}
+                        </h5>
                         <p>{{ post.snippet }}</p>
                         <button>
                             <a href="{{ post.url }}">Read More</a>

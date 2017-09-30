@@ -34,6 +34,14 @@ h1, h2, h3, h4, h5 {
     font-size: 20px;
 }
 
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 15px;
+}
+
 p {
     font-size: 12px;
 }
@@ -206,10 +214,10 @@ nav a.active, nav a:hover {
     border-top: 1px solid #A0A09F;
 }
 
-h4.side-bar-item-title {
-    font-size: 15px;
+.side-bar-item-title {
+    /* font-size: 15px; */
     text-transform: uppercase;
-    font-family: "Futura Std Book";
+    font-family: Futura Std Book;
     letter-spacing: .1em;
 }
 
@@ -235,21 +243,26 @@ h4.side-bar-item-title {
 }
 
 .blog .title, .post .title {
+    display: inline-block;
     font-family: Futura Std Book;
     font-size: 20px;
     text-transform: uppercase;
     text-decoration: none;
 }
 
-.blog .category {
+.category {
     border: 2px solid black;
     padding: 5px 10px;
     text-transform: capitalize;
     margin-left: 20px;
 }
 
-.blog .date {
-    font-size: 14px;
+.title-category {
+    margin-bottom: 5px;
+}
+
+.date-author {
+    font-family: Futura Std Book;
 }
 
 .blog-tags {
@@ -274,6 +287,10 @@ h4.side-bar-item-title {
 
 #pintrest {
     fill: #BD081C;
+}
+
+.post-content {
+    margin-top: 20px;
 }
 
 .post p {
