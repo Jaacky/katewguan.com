@@ -7,8 +7,8 @@ layout: default
         <h1>Blog</h1>
     </div>
     <div class="container blog">
-        <div class="blog-column blog-posts">
-            <ul>
+        <div class="column column-content">
+            <ul class="blog-posts">
                 {% for post in site.posts %}
                     <li>
                         <div class="title-category">
@@ -28,7 +28,7 @@ layout: default
                 {% endfor %}
             </ul>
         </div>
-        <div class="blog-column side-bar">
+        <div class="column column-side-bar">
             {% include sidebar.html %}
         </div>
     </div>

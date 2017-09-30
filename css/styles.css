@@ -194,17 +194,17 @@ nav a.active, nav a:hover {
     margin-bottom: 20px;
 }
 
-.blog .blog-column, .post .post-column {
+.column {
     display: inline-block;
     vertical-align: top;
 }
 
-.blog .blog-posts, .post .post-post {
+.column-content {
     width: 70%;
     padding-right: 45px;
 }
 
-.blog .side-bar, .post .side-bar {
+.column-side-bar {
     width: 30%;
 }
 
