@@ -221,9 +221,32 @@ nav a.active, nav a:hover {
     letter-spacing: .1em;
 }
 
+.side-bar-item-title:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.side-bar-item-content {
+    margin-top: 5px;
+}
+
 .social-media-container {
     display: flex;
     justify-content: space-between;
+}
+
+.featured-post {
+    margin-bottom: 5px;
+}
+
+.featured-post a {
+    text-transform: uppercase;
+}
+
+.featured-post .date {
+    font-size: 14px;
 }
 
 .blog-posts li {
