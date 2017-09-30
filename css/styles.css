@@ -302,6 +302,7 @@ nav a.active, nav a:hover {
 
 #twitter {
     fill: #1DA1F2;
+    margin-right: 9px; /* bird makes spacing look bigger */
 }
 
 #instagram {
