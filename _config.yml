@@ -30,6 +30,7 @@ defaults:
       type: "posts"
     values:
       author: "Kate Guan"
+permalink: /blog/:title
 
 # Build settings
 markdown: kramdown
