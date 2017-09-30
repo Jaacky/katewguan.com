@@ -26,32 +26,8 @@ layout: default
                 {% endfor %}
             </ul>
         </div>
-        <div class="blog-column blog-side-bar">
-            <div class="blog-side-bar-item">
-                <p>Follow me</p>
-                <a href="https://twitter.com/katewguan" id="twitter" class="social-media-icon">
-                    {% include twitter-icon.html %}
-                </a>
-                <a href="https://www.instagram.com/kataguan/" id="instagram" class="social-media-icon">
-                    {% include instagram-icon.html %}
-                </a>
-            </div>
-            <div class="blog-side-bar-item">
-                <p>Search by tags</p>
-                <ul class="blog-tags-list">
-                    {% assign sorted_tags = site.tags | sort %}
-                    {% for tag in sorted_tags %}
-                        {% assign t = tag | first %}
-                        {% assign posts = tag | last %}
-                        <li class="blog-tags">
-                            <a href="">{{ t }}</a>
-                        </li>
-                    {% endfor %}
-                </ul>
-            </div>
-            <div class="blog-side-bar-item">
-                <p>Featured posts</p>
-            </div>
+        <div class="blog-column side-bar">
+            {% include sidebar.html %}
         </div>
     </div>
 </div>

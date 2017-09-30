@@ -8,6 +8,16 @@
     src: url('./fonts/Futura_Thin.ttf');
 }
 
+@font-face {
+    font-family: 'Enriqueta';
+    src: url('./fonts/Enriqueta-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Enriqueta Bold';
+    src: url('./fonts/Enriqueta-Bold.otf');
+}
+
  * {
     font-family: Futura Std Book;
     margin: 0;
@@ -115,7 +125,7 @@ nav a.active, nav a:hover {
     max-width: 1000px;
 }
 
-.container.cv, .container.about, .container.blog, .container.post {
+.container.landing p, .container.cv, .container.about, .container.blog, .container.post {
     text-align: left;
 }
 
@@ -131,6 +141,11 @@ nav a.active, nav a:hover {
 .container p {
     font-size: 18px;
     line-height: 20px;
+}
+
+.container.landing p {
+    margin-bottom: 15px;
+    font-size: 20px;
 }
 
 .cv-section {
@@ -171,29 +186,39 @@ nav a.active, nav a:hover {
     margin-bottom: 20px;
 }
 
-.blog .blog-column {
+.blog .blog-column, .post .post-column {
     display: inline-block;
     vertical-align: top;
 }
 
-.blog .blog-posts {
+.blog .blog-posts, .post .post-post {
     width: 70%;
+    padding-right: 45px;
 }
 
-.blog .blog-side-bar {
+.blog .side-bar, .post .side-bar {
     width: 30%;
 }
 
-.blog-side-bar-item {
-    margin-bottom: 15px;
+.side-bar-item {
+    /* margin-bottom: 15px; */
+    padding: 15px 0;
+    border-top: 1px solid #A0A09F;
 }
 
-.blog-side-bar p {
-    font-size: 16px;
+h4.side-bar-item-title {
+    font-size: 15px;
     text-transform: uppercase;
+    font-family: "Futura Std Book";
+    letter-spacing: .1em;
 }
 
-.blog li {
+.social-media-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-posts li {
     margin-top: 30px;
 }
 
@@ -209,7 +234,7 @@ nav a.active, nav a:hover {
     margin-top: 10px;
 }
 
-.blog .title {
+.blog .title, .post .title {
     font-family: Futura Std Book;
     font-size: 20px;
     text-transform: uppercase;
@@ -227,7 +252,7 @@ nav a.active, nav a:hover {
     font-size: 14px;
 }
 
-.blog .blog-tags {
+.blog-tags {
     display: inline-block;
     margin-top: 0;
     margin-right: 5px;
@@ -236,7 +261,7 @@ nav a.active, nav a:hover {
 .social-media-icon {
     width: 20px;
     display: inline-block;
-    margin-right: 8px;
+    margin-right: 10px;
 }
 
 #twitter {
@@ -245,4 +270,14 @@ nav a.active, nav a:hover {
 
 #instagram {
     fill: #E4405F;
+}
+
+#pintrest {
+    fill: #BD081C;
+}
+
+.post p {
+    font-family: 'Enriqueta';
+    font-size: 14px;
+    margin-bottom: 20px;
 }

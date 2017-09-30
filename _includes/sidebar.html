@@ -1,0 +1,30 @@
+<div class="side-bar-item social-media-container">
+    <h4 class="side-bar-item-title">Follow me</h4>
+    <div class="social-media-icons">
+        <a href="https://twitter.com/katewguan" id="twitter" class="social-media-icon">
+            {% include icons/twitter-icon.html %}
+        </a>
+        <a href="https://www.instagram.com/kataguan/" id="instagram" class="social-media-icon">
+            {% include icons/instagram-icon.html %}
+        </a>
+        <a href="#" id="pintrest" class="social-media-icon">
+            {% include icons/pintrest-icon.html %}
+        </a>
+    </div>
+</div>
+<div class="side-bar-item">
+    <h4 class="side-bar-item-title">Search by tags</h4>
+    <ul class="blog-tags-list">
+        {% assign sorted_tags = site.tags | sort %}
+        {% for tag in sorted_tags %}
+            {% assign t = tag | first %}
+            {% assign posts = tag | last %}
+            <li class="blog-tags">
+                <a href="">{{ t }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+<div class="side-bar-item">
+    <h4 class="side-bar-item-title">Featured posts</h4>
+</div>
