@@ -4,22 +4,23 @@ layout: default
 
 <div class="main">
     <div class="header">
-        <h1>Kate Guan</h1>
-        <h2>MA Student | University of British Columbia</h2>
+        <h1>CV</h1>
     </div>
     <div class="container cv">
-        <div class="cv-section">
+        <div class="cv-section education">
             <h4>Education</h4>
-            <div class="cv-row">
-                <div class="cv-date">
-                    <p>2012 - 2017</p>
+            {% for education in site.data.education %}
+                <div class="cv-row">
+                    <div class="cv-date">
+                        <p>{{ education.date }}</p>
+                    </div>
+                    <div class="cv-dated-content">
+                        {% for details in education.details %}
+                            <p>{{ details }}</p>
+                        {% endfor %}
+                    </div>
                 </div>
-                <div class="cv-dated-content">
-                    <p>B.Sc. Psychology. Univeristy of Toronto. 2017.</p>
-                    <p>Graduated Honors with High Distinction</p>
-                    <p>Undergraduate Supervisor: Jason Plaks</p>
-                </div>
-            </div>
+            {% endfor %}
         </div>
 
         <div class="cv-section">
