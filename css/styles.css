@@ -176,7 +176,11 @@ nav a.active, nav a:hover {
     width: 75%;
     display: inline-block;
     vertical-align: top;
-    padding: 20px 40px;
+    padding: 0 40px;
+}
+
+.landing {
+    margin-bottom: 88px;
 }
 
 .cv-section {
