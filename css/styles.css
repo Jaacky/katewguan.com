@@ -93,25 +93,28 @@ nav a.active, nav a:hover {
 
 .main {
     text-align: center;
-    padding: 40px;
     background-color: white;
 }
 
 .header {
     /* display: inline-block; */
-    letter-spacing: 0.45em;
-    padding: 40px;
+    padding: 20px;
+    background-color: hsla(0, 0%, 95%);
 }
 
 .header h1 {
-     letter-spacing: 0.45em; 
+    letter-spacing: 0.45em;
     text-transform: uppercase;
-    font-size: 37px;
-    margin-bottom: 25px;
+    color: hsl(0, 0%, 25%);
 }
 
 .header h2 {
-    font-size: 23px;
+    letter-spacing: 0.45em;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: hsl(0, 0%, 25%);
+
+    margin-top: 15px;
 }
 
 .footer {
@@ -154,6 +157,26 @@ nav a.active, nav a:hover {
 .container.landing p {
     margin-bottom: 15px;
     font-size: 20px;
+}
+
+.image-blurb-container {
+    width: 100%;
+}
+
+.image-blurb-container .image {
+    width: 25%;
+    display: inline-block;
+}
+
+.image-blurb-container .image img {
+    width: 100%;
+}
+
+.image-blurb-container .blurb {
+    width: 75%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px 40px;
 }
 
 .cv-section {
