@@ -205,8 +205,12 @@ nav a.active, nav a:hover {
     width: 80%;
 }
 
-.conference {
+.education, .conference {
     margin-bottom: 15px;
+}
+
+.education:last-child {
+    margin-bottom: 0;
 }
 
 .new-projects h3 {
