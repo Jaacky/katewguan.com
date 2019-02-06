@@ -121,6 +121,7 @@ nav a.active, nav a:hover {
     text-align: center;
     color: white;
     padding: 40px;
+    padding-bottom: 0;
 }
 
 .footer h2 {
@@ -136,8 +137,16 @@ nav a.active, nav a:hover {
     max-width: 1000px;
 }
 
+.footer .container {
+    padding-bottom: 0;
+}
+
 .container.landing p, .container.cv, .container.about, .container.blog, .container.post, .container.research {
     text-align: left;
+}
+
+.container.research {
+    padding-bottom: 150px;
 }
 
 .container * {
