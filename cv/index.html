@@ -4,22 +4,23 @@ layout: default
 
 <div class="main">
     <div class="header">
-        <h1>Kate Guan</h1>
-        <h2>MA Student | University of British Columbia</h2>
+        <h1>CV</h1>
     </div>
     <div class="container cv">
         <div class="cv-section">
             <h4>Education</h4>
-            <div class="cv-row">
-                <div class="cv-date">
-                    <p>2012 - 2017</p>
+            {% for education in site.data.education %}
+                <div class="cv-row education">
+                    <div class="cv-date">
+                        <p>{{ education.date }}</p>
+                    </div>
+                    <div class="cv-dated-content">
+                        {% for details in education.details %}
+                            <p>{{ details }}</p>
+                        {% endfor %}
+                    </div>
                 </div>
-                <div class="cv-dated-content">
-                    <p>B.Sc. Psychology. Univeristy of Toronto. 2017.</p>
-                    <p>Graduated Honors with High Distinction</p>
-                    <p>Undergraduate Supervisor: Jason Plaks</p>
-                </div>
-            </div>
+            {% endfor %}
         </div>
 
         <div class="cv-section">
@@ -37,6 +38,29 @@ layout: default
         </div>
 
         <div class="cv-section">
+            <h4>Teaching and Mentoring Experience</h4>
+            {% for experience in site.data.teaching-and-mentoring %}
+                <div class="cv-row">
+                    <div class="cv-date">
+                        <p>{{ experience.date }}</p>
+                    </div>
+                    <div class="cv-dated-content">
+                        <p>{{ experience.details }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="cv-section">
+            <h4>Publications</h4>
+            <div class="cv-row">
+                <p>
+                    Benjamin, R., & Guan, K. (in press). Personality in culture. In B. J. Carducci (Editor-in-Chief) & C. S. Nave (Vol.  Ed.), The Wiley-Blackwell encyclopedia of personality and individual differences: Vol. I. Models and theories.  Hoboken, NJ: John Wiley & Sons.
+                </p>
+            </div>
+        </div>
+
+        <div class="cv-section">
             <h4>Conference Presentations</h4>
             {% for conference in site.data.conferences %}
                 <div class="cv-row">
@@ -48,6 +72,18 @@ layout: default
                     </p>
                 </div>
             {% endfor %}
+        </div>
+
+        <div class="cv-section">
+            <h4>Professional Affiliations</h4>
+            <div class="cv-row">
+                <div class="cv-date">
+                    <p>2017 - Present</p>
+                </div>
+                <div class="cv-dated-content">
+                    <p>Society for Personality and Social Psychology</p>
+                </div>
+            </div>
         </div>
 
     </div>
