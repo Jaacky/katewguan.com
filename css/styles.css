@@ -136,7 +136,7 @@ nav a.active, nav a:hover {
     max-width: 1000px;
 }
 
-.container.landing p, .container.cv, .container.about, .container.blog, .container.post {
+.container.landing p, .container.cv, .container.about, .container.blog, .container.post, .container.research {
     text-align: left;
 }
 
