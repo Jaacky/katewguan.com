@@ -38,18 +38,27 @@ layout: default
         </div>
 
         <div class="cv-section">
-                <h4>Teaching and Mentoring Experience</h4>
-                {% for experience in site.data.teaching-and-mentoring %}
-                    <div class="cv-row">
-                        <div class="cv-date">
-                            <p>{{ experience.date }}</p>
-                        </div>
-                        <div class="cv-dated-content">
-                            <p>{{ experience.details }}</p>
-                        </div>
+            <h4>Teaching and Mentoring Experience</h4>
+            {% for experience in site.data.teaching-and-mentoring %}
+                <div class="cv-row">
+                    <div class="cv-date">
+                        <p>{{ experience.date }}</p>
                     </div>
-                {% endfor %}
+                    <div class="cv-dated-content">
+                        <p>{{ experience.details }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="cv-section">
+            <h4>Publications</h4>
+            <div class="cv-row">
+                <p>
+                    Benjamin, R., & Guan, K. (in press). Personality in culture. In B. J. Carducci (Editor-in-Chief) & C. S. Nave (Vol.  Ed.), The Wiley-Blackwell encyclopedia of personality and individual differences: Vol. I. Models and theories.  Hoboken, NJ: John Wiley & Sons.
+                </p>
             </div>
+        </div>
 
         <div class="cv-section">
             <h4>Conference Presentations</h4>
