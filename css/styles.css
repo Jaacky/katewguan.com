@@ -213,6 +213,10 @@ nav a.active, nav a:hover {
     margin-bottom: 0;
 }
 
+.research h3 {
+    margin-bottom: 38px;
+}
+
 .new-projects h3 {
     text-transform: uppercase;
 }
